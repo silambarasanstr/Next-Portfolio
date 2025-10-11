@@ -15,7 +15,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
-            "I'm a passionate developer with 6+ years of experience in building
+            I am a passionate developer with 6+ years of experience in building
             modern, scalable, and user-friendly applications."
           </p>
         </div>
@@ -23,7 +23,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-justify text-gray-600 ">
-              Hi, I’m Silambarasan, a passionate Web Developer and Designer with
+              Hi, I am Silambarasan, a passionate Web Developer and Designer with
               experience in building responsive and user-friendly websites. I
               have hands-on experience working with modern frontend technologies
               and frameworks, and I enjoy creating efficient, clean, and
