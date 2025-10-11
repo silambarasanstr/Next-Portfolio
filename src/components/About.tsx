@@ -16,7 +16,7 @@ const About = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             I am a passionate developer with 6+ years of experience in building
-            modern, scalable, and user-friendly applications."
+            modern, scalable, and user-friendly applications.
           </p>
         </div>
 

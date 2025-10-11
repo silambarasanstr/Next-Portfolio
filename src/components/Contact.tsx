@@ -55,7 +55,7 @@ const Contact = () => {
             Lets Work Together
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Have a project in mind? I would love to hear about it. Let's create
+            Have a project in mind? I would love to hear about it. Let&apos;s create
             something amazing together.
           </p>
         </div>
