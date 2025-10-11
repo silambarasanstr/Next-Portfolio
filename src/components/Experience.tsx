@@ -17,7 +17,7 @@ const Experience = () => {
         </div>
 
         <div className="space-y-8">
-          {experiences.map((experience, index) => (
+          {experiences.map((experience) => (
             <div
               key={experience.id}
               className="border border-gray-200 rounded relative overflow-hidden hover:shadow-lg transition-all duration-300 border-l-4 border-l-blue-600"

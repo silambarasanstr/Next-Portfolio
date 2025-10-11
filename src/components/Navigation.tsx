@@ -86,7 +86,6 @@ const Navigation = () => {
             >
               <Download className="h-4 w-4 mr-1" />
               Resume
-                
             </a>
             <a
               href="https://github.com"
@@ -94,7 +93,7 @@ const Navigation = () => {
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-               <Github className="h-5 w-5" />
+              <Github className="h-5 w-5" />
             </a>
           </div>
 
@@ -124,10 +123,10 @@ const Navigation = () => {
               </a>
             ))}
 
-            <div className="flex space-x-4 pt-3">
+            <div className="space-y-2">
               <a
                 href="#resume"
-                className="text-gray-600 hover:text-green-600 hover:bg-green-50 px-3 py-1 rounded transition-colors"
+                className="block text-gray-600 hover:text-green-600 hover:bg-green-50  rounded transition-colors"
               >
                 Resume
               </a>
@@ -135,7 +134,7 @@ const Navigation = () => {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="block text-gray-600 hover:text-gray-900 transition-colors"
               >
                 GitHub
               </a>

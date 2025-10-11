@@ -1,21 +1,53 @@
 import { Project } from "@/types/portfolio";
 import Img from "@/assert/ntsc.png";
+import PvkImg from "@/assert/poorvika.png";
 
 export const projects: Project[] = [
   {
     id: "ecommerce-platform",
-    title: "E-Commerce Platform",
+    title: "Poorvika E-Commerce Platform",
     description:
       "Full-stack e-commerce solution with modern payment integration",
     longDescription:
       "A comprehensive e-commerce platform built with Next.js and Stripe. Features include user authentication, product management, shopping cart, order processing, and admin dashboard. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
-    image: "Img",
-    technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-    githubUrl: "https://github.com/example/ecommerce",
-    liveUrl: "https://ecommerce-demo.vercel.app",
+    image: "PvkImg",
+    technologies: ["Next.js", "TypeScript", "Node Js", "Monogo DB", "RestAPI"],
+    // githubUrl: "https://github.com/example/ecommerce",
+    liveUrl: "http://poorvika.com/",
     featured: true,
     category: "fullstack",
   },
+  {
+    id: "FlipKart-platform",
+    title: "Flipkart E-Commerce Platform",
+    description:
+      "Full-stack e-commerce solution with modern payment integration",
+    longDescription:
+      "A comprehensive e-commerce platform built with Next.js and Stripe. Features include user authentication, product management, shopping cart, order processing, and admin dashboard. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
+    image: "PvkImg",
+    technologies: ["React.js", "TypeScript", "Node Js", "Monogo DB", "RestAPI"],
+
+    githubUrl: "https://github.com/example/ecommerce",
+    liveUrl: "http://poorvika.com/",
+    featured: true,
+    category: "fullstack",
+  },
+  {
+    id: "Food-Delivery-platform",
+    title: "Food Delivery E-Commerce",
+    description:
+      "Full-stack e-commerce solution with modern payment integration",
+    longDescription:
+      "A comprehensive e-commerce platform built with Next.js and Stripe. Features include user authentication, product management, shopping cart, order processing, and admin dashboard. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
+    image: "PvkImg",
+    technologies: ["Next.js", "TypeScript", "Node Js", "Monogo DB", "RestAPI"],
+
+    githubUrl: "https://github.com/example/ecommerce",
+    liveUrl: "http://poorvika.com/",
+    featured: true,
+    category: "fullstack",
+  },
+
   {
     id: "task-management-app",
     title: "Task Management App",
@@ -73,28 +105,62 @@ export const skills = [
 export const experiences = [
   {
     id: "1",
-    company: "360degreeinfo Pvt Ltd.",
+    company: "Apexon",
     position: "Frontend Developer",
-    duration: "2022 - Present",
+    duration: "2024 - 2024-AUG",
     description: [
-      "Led development of customer-facing React applications serving 100k+ users",
-      "Implemented modern CI/CD pipelines reducing deployment time by 60%",
-      "Mentored junior developers and established coding standards",
-      "Collaborated with design team to create pixel-perfect user interfaces",
+      "Digital Technology Services.",
+      "Focused on front-end development with attention to detail.",
+      "Collaborated with the design team to create pixel-perfect user interfaces.",
     ],
-    technologies: ["React", "TypeScript", "Next.js", "AWS", "Docker"],
+    technologies: ["React.js", "TypeScript", "Next.js"],
   },
   {
     id: "2",
-    company: "360degreeinfo Pvt Ltd.",
-    position: "Frontend Developer",
-    duration: "2020 - 2022",
+    company: "Poorvika Mobiles Pvt Ltd.",
+    position: "Senior Frontend Developer",
+    duration: "2019 - 2024",
     description: [
-      "Built end-to-end web applications from concept to production",
-      "Developed RESTful APIs and microservices architecture",
-      "Optimized database queries improving application performance by 40%",
-      "Integrated third-party services and payment processing systems",
+      "Built end-to-end web applications from concept to production.",
+      "Focused on front-end development with attention to detail.",
+      "Implemented modern CI/CD pipelines, reducing deployment time by 60%.",
+      "Collaborated with the design team to create pixel-perfect user interfaces.",
+      "Integrated third-party services and payment processing systems.",
     ],
-    technologies: ["Vue.js", "Node.js", "PostgreSQL", "Redis", "Stripe"],
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "REST API",
+      "TypeScript",
+      "MongoDB",
+    ],
+  },
+  {
+    id: "3",
+    company: "GYSO ECOM Services (P) Ltd.",
+    position: "Frontend Developer (OpenCart)",
+    duration: "2018 - 2019",
+    description: [
+      "Enterprise application development.",
+      "Developed dynamic web pages using WordPress HTML5 and CSS3.",
+      "Updated existing website HTML and CSS to meet latest web standards.",
+      "Focused on front-end development with attention to detail.",
+      "Implemented mobile responsive web designs.",
+    ],
+    technologies: ["HTML", "Bootstrap", "PHP", "MySQL", "Laravel"],
+  },
+  {
+    id: "4",
+    company: "360degreeinfo Pvt Ltd.",
+    position: "Junior Frontend Developer",
+    duration: "2016 - 2018",
+    description: [
+      "Developed dynamic web pages using HTML5 and CSS3.",
+      "Updated existing website layouts to meet modern web standards.",
+      "Focused on front-end development and user experience.",
+      "Implemented mobile responsive web designs.",
+    ],
+    technologies: ["HTML", "Bootstrap", "PHP", "MySQL"],
   },
 ];

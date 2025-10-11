@@ -9,9 +9,9 @@ const Projects = () => {
   const [filter, setFilter] = useState<string>("all");
   const categories = [
     { value: "all", label: "All Projects" },
-    { value: "web", label: "Web Apps" },
-    { value: "mobile", label: "Mobile" },
+    { value: "web", label: "Static Site" },
     { value: "fullstack", label: "Full Stack" },
+    { value: "mobile", label: "Own Project" },
   ];
 
   // ✅ Fix: return filtered array directly
@@ -27,7 +27,7 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-             Projects
+            Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A collection of projects that showcase my skills and passion for

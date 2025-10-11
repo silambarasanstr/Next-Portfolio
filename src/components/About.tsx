@@ -9,18 +9,32 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             About Me
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
             "I'm a passionate developer with 6+ years of experience in building
             modern, scalable, and user-friendly applications."
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-justify text-gray-600 ">
+              Hi, I’m Silambarasan, a passionate Web Developer and Designer with
+              experience in building responsive and user-friendly websites. I
+              have hands-on experience working with modern frontend technologies
+              and frameworks, and I enjoy creating efficient, clean, and
+              visually appealing web solutions. I am proficient in HTML, CSS,
+              Bootstrap, Tailwind CSS, JavaScript, TypeScript, React.js and
+              Next.js (Basic), I thrive in collaborative environments, enjoy
+              brainstorming ideas, and solving complex problems as part of a
+              team. My goal is to deliver impactful web experiences that enhance
+              user engagement and meet business objectives.
+            </p>
+          </div>
           {Object.entries(skillCategories).map(([category, categorySkills]) => (
             <div key={category}>
               <div>
