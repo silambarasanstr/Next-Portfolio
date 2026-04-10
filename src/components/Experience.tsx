@@ -4,68 +4,64 @@ import { Building, Calendar } from "lucide-react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            Work Experience
+    <section id="experience" className="py-16 bg-gray-50">
+      <div className="max-w-5xl mx-auto px-4">
+        {/* Header */}
+        <div className="text-center mb-10">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">
+            Experience
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            My professional journey and the impact I have made at various
-            organizations
+
+          <p className="text-[18px] font-light leading-relaxed tracking-wide text-gray-500 max-w-2xl mx-auto">
+            Here's a summary of my professional experience and the roles I've
+            held.
           </p>
         </div>
 
-        <div className="space-y-8">
-          {experiences.map((experience) => (
+        {/* Cards */}
+        <div className="space-y-5">
+          {experiences.map((exp) => (
             <div
-              key={experience.id}
-              className="border border-gray-200 rounded relative overflow-hidden hover:shadow-lg transition-all duration-300 border-l-4 border-l-blue-600"
+              key={exp.id}
+              className="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-200"
             >
-              <div className="p-8">
-                <div className="grid lg:grid-cols-3 gap-6">
-                  <div className="lg:col-span-1">
-                    <div className="space-y-2">
-                      <div className="flex items-center text-gray-600 mb-2">
-                        <span className="text-sm font-medium flex items-center">
-                          <Building className="h-4 w-4 mr-2" />
-                          {experience.company}
-                        </span>
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900">
-                        {experience.position}
-                      </h3>
-                      <div className="flex items-center text-gray-500">
-                        <Calendar className="h-4 w-4 mr-2" />
-                        <span className="text-sm">{experience.duration}</span>
-                      </div>
-                    </div>
-                  </div>
+              {/* Top */}
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    {exp.position}
+                  </h3>
 
-                  {/* Description */}
-                  <div className="lg:col-span-2">
-                    <ul className="space-y-3 text-gray-700 mb-6">
-                      {experience.description.map((item, itemIndex) => (
-                        <li key={itemIndex} className="flex items-start">
-                          <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Technologies */}
-                    <div className="flex flex-wrap gap-2">
-                      {experience.technologies.map((tech) => (
-                        <div
-                          key={tech}
-                          className="bg-blue-50 border-transparent text-blue-700 hover:bg-blue-100 items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold"
-                        >
-                          {tech}
-                        </div>
-                      ))}
-                    </div>
+                  <div className="flex items-center text-gray-500 text-sm mt-1 gap-3">
+                    <span className="flex items-center gap-1">
+                      <Building className="w-4 h-4" />
+                      {exp.company}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Calendar className="w-4 h-4" />
+                      {exp.duration}
+                    </span>
                   </div>
                 </div>
+              </div>
+
+              {/* Description (limit 2) */}
+              <ul className="text-sm text-gray-600 space-y-1 mb-3">
+                {exp.description.slice(0, 2).map((item, i) => (
+                  <li key={i}>• {item}</li>
+                ))}
+              </ul>
+
+              {/* Tech */}
+              <div className="flex flex-wrap gap-2">
+                {exp.technologies.slice(0, 4).map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-md"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           ))}

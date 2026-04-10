@@ -68,7 +68,7 @@ const Navigation = () => {
                   key={item.href}
                   className={`cursor-pointer px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     activeSection === item.href.substring(1)
-                      ? "text-blue-600 bg-blue-50"
+                      ? "text-blue-600 bg-blue-50 border border-blue-200"
                       : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
                   }`}
                 >

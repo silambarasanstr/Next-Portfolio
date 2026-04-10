@@ -1,6 +1,5 @@
 import { Project } from "@/types/portfolio";
-import Img from "@/assert/ntsc.png";
-import PvkImg from "@/assert/poorvika.png";
+
 
 export const projects: Project[] = [
   {
@@ -95,7 +94,7 @@ export const skills = [
   { name: "Tailwind CSS", level: 92, category: "frontend" as const },
 
   { name: "Node.js", level: 85, category: "backend" as const },
-  { name: "PostgreSQL", level: 80, category: "backend" as const },
+
   { name: "MongoDB", level: 75, category: "backend" as const },
   { name: "Git", level: 90, category: "tools" as const },
   { name: "Docker", level: 70, category: "tools" as const },
