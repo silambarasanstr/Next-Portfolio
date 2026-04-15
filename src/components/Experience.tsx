@@ -13,7 +13,7 @@ const Experience = () => {
           </h2>
 
           <p className="text-[18px] font-light leading-relaxed tracking-wide text-gray-500 max-w-2xl mx-auto">
-            Here&apos;s a summary of my professional experience and the roles I&apos;ve held.
+            Here&apos;s a summary of my professional experiences and the roles I&apos;ve held.
           </p>
         </div>
 
