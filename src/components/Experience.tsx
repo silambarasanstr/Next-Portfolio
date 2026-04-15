@@ -13,14 +13,13 @@ const Experience = () => {
           </h2>
 
           <p className="text-[18px] font-light leading-relaxed tracking-wide text-gray-500 max-w-2xl mx-auto">
-            Here's a summary of my professional experience and the roles I've
-            held.
+            Here&apos;s a summary of my professional experience and the roles I&apos;ve held.
           </p>
         </div>
 
         {/* Cards */}
         <div className="space-y-5">
-          {experiences.map((exp) => (
+          {experiences?.map((exp) => (
             <div
               key={exp.id}
               className="bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition border border-gray-200"
@@ -45,16 +44,16 @@ const Experience = () => {
                 </div>
               </div>
 
-              {/* Description (limit 2) */}
+              {/* Description */}
               <ul className="text-sm text-gray-600 space-y-1 mb-3">
-                {exp.description.slice(0, 2).map((item, i) => (
+                {exp.description?.slice(0, 2).map((item, i) => (
                   <li key={i}>• {item}</li>
                 ))}
               </ul>
 
               {/* Tech */}
               <div className="flex flex-wrap gap-2">
-                {exp.technologies.slice(0, 4).map((tech) => (
+                {exp.technologies?.slice(0, 4).map((tech) => (
                   <span
                     key={tech}
                     className="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-md"
