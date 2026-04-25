@@ -30,15 +30,7 @@ const Login = () => {
     }
   }, [router]);
 
-  //  useEffect(() => {
-  //   setMounted(true);
-
-  //   const hasToken = document.cookie.includes("token=");
-
-  //   if (hasToken) {
-  //     router.push("/admin");
-  //   }
-  // }, [router]);
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -53,7 +45,7 @@ const Login = () => {
       formData.password === "123456"
     ) {
       localStorage.setItem("token", "admin-token"); // 🔐 fake token
-      // document.cookie = "token=admin-token; path=/";
+      
 
       router.push("/admin"); // ✅ redirect to admin
     } else {
