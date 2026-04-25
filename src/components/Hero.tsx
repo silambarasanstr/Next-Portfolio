@@ -4,9 +4,10 @@ import React, { useEffect, useState } from "react";
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
+  
   const roles = [
     "Front-End Developer",
-    "React & Next.js Specialist",
+    "React & Next.js ",
     "Problem Solver",
     "Always Exploring Tech",
   ];
@@ -42,9 +43,9 @@ const Hero = () => {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tight">
-              Hi, I am
-              <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-orange-500 bg-clip-text text-transparent">
-              san
+              Hi, I am 
+              <span className="ml-2 text-4xl sm:text-6xl lg:text-7xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Silambarasan
               </span>
             </h1>
             <div className="h-16 flex items-center justify-center">

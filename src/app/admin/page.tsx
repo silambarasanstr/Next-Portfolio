@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation"; // ✅ added
 
 // ✅ Project Type
 type Project = {
@@ -19,6 +20,8 @@ export default function AdminPage() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [editingId, setEditingId] = useState<string | null>(null);
 
+  const router = useRouter(); // ✅ added
+
   const [form, setForm] = useState<Project>({
     id: "",
     title: "",
@@ -31,6 +34,22 @@ export default function AdminPage() {
     featured: false,
     category: "",
   });
+
+  // ✅ 🔐 Protect Admin Page
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      router.push("/login"); // 🚫 block access
+    }
+  }, [router]);
+
+  // ✅ Logout function
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    // document.cookie = "token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+    router.push("/login");
+  };
 
   // Handle Input
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -99,9 +118,14 @@ export default function AdminPage() {
       {/* Main */}
       <main className="flex-1 p-6">
         {/* Header */}
-        <div className="bg-white p-4 rounded-xl shadow mb-6 flex justify-between">
+        <div className="bg-white p-4 rounded-xl shadow mb-6 flex justify-between items-center">
           <h1 className="text-xl font-semibold">Admin Dashboard</h1>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">
+
+          {/* ✅ Logout Button FIXED */}
+          <button
+            onClick={handleLogout}
+            className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
+          >
             Logout
           </button>
         </div>
@@ -206,11 +230,11 @@ export default function AdminPage() {
           </div>
         </div>
 
-        {/* ================= TABLE ================= */}
+        {/* TABLE unchanged */}
         <div className="bg-white p-6 rounded-xl shadow">
           <h2 className="text-lg font-semibold mb-4">Projects</h2>
 
-          <div className="bg-white rounded-2xl shadow overflow-hidden border border-gray-200">
+          <div className="rounded-2xl shadow overflow-hidden border border-gray-200">
             <table className="w-full text-sm">
               {/* Header */}
               <thead className="bg-gray-50 text-gray-600 uppercase text-xs tracking-wider">
