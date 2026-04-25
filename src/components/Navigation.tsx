@@ -104,6 +104,15 @@ const Navigation = () => {
             >
               <Github className="h-5 w-5" />
             </a>
+
+            <a
+              href="/admin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 border border-gray-200 px-3 py-1 rounded hover:text-gray-900 transition-colors"
+            >
+              Admin
+            </a>
           </div>
 
           {/* Mobile menu button */}
