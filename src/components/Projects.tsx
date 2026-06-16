@@ -9,9 +9,9 @@ const Projects = () => {
   const [filter, setFilter] = useState<string>("all");
   const categories = [
     { value: "all", label: "All Projects" },
-    { value: "web", label: "Static Site" },
-    { value: "fullstack", label: "Full Stack" },
-    { value: "mobile", label: "Own Project" },
+    { value: "static", label: "Static Site" },
+    { value: "fullstack", label: "MERN Stack" },
+    { value: "admin", label: "Admin Dashboard" },
   ];
 
   // ✅ Fix: return filtered array directly
@@ -43,7 +43,7 @@ const Projects = () => {
               key={category.value}
               className={`px-4 py-2 rounded cursor-pointer ${
                 filter === category.value
-                  ? `bg-blue-300 text-white shadow-lg default`
+                  ? `bg-linear-to-r from-indigo-500 to-purple-500 text-white shadow-lg default`
                   : "border-gray-300 text-gray-600 hover:border-blue-600 hover:text-blue-600 outline"
               }`}
             >
@@ -63,7 +63,7 @@ const Projects = () => {
               <div className=" group overflow-hidden  bg-white border-0">
                 <div className="relative overflow-hidden">
                   <Image
-                    src={Img}
+                    src={project.image}
                     alt={project.title}
                     width={400}
                     height={250}
@@ -112,7 +112,7 @@ const Projects = () => {
                         {project.technologies.slice(0, 4).map((tech) => (
                           <div
                             key={tech}
-                            className="bg-gray-100 text-gray-700 hover:bg-gray-200 items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold"
+                            className="bg-linear-to-r from-indigo-500 to-purple-500 text-white hover:bg-gray-200 items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold"
                           >
                             {tech}
                           </div>

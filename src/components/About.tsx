@@ -71,7 +71,7 @@ const About = () => {
                       <span
                         key={ele.name}
                         className="px-3 py-1.5 text-xs font-medium rounded-full 
-                      bg-gradient-to-r from-indigo-500 to-purple-500 
+                      bg-linear-to-r from-indigo-500 to-purple-500 
                       text-white shadow-sm hover:scale-105 transition-transform duration-200"
                       >
                         {ele.name}

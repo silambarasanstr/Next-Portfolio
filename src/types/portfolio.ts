@@ -3,12 +3,12 @@ export interface Project {
   title: string;
   description: string;
   longDescription: string;
-  image: string;
+  image: any;
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
-  featured: boolean;
-  category: "web" | "mobile" | "fullstack" | "opensource";
+  featured?: boolean;
+  category: "static" | "fullstack" | "admin";
 }
 
 export interface Skill {

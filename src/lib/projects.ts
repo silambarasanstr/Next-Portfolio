@@ -1,89 +1,84 @@
 import { Project } from "@/types/portfolio";
-
+import Auro from "@/assert/auro.png";
+import AuroAdmin from "@/assert/auro-admin.png";
+import Portfolio from "@/assert/portfolio.png";
 
 export const projects: Project[] = [
   {
     id: "ecommerce-platform",
-    title: "Poorvika E-Commerce Platform",
+    title: "AURA-SHOP-APP [FrontEnd]",
     description:
       "Full-stack e-commerce solution with modern payment integration",
     longDescription:
       "A comprehensive e-commerce platform built with Next.js and Stripe. Features include user authentication, product management, shopping cart, order processing, and admin dashboard. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
-    image: "PvkImg",
-    technologies: ["Next.js", "TypeScript", "Node Js", "Monogo DB", "RestAPI"],
-    // githubUrl: "https://github.com/example/ecommerce",
-    liveUrl: "http://poorvika.com/",
-    featured: true,
+    image: Auro,
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Node Js",
+      "Monogo DB",
+      "RestAPI",
+    ],
+    githubUrl: "https://github.com/silambarasanstr/AURA-SHOP-APP-BACKUP",
+    liveUrl: "https://aura-shop-app-backup.vercel.app/",
+
     category: "fullstack",
   },
   {
     id: "FlipKart-platform",
-    title: "Flipkart E-Commerce Platform",
+    title: "AURA-SHOP-APP [Admin]",
     description:
       "Full-stack e-commerce solution with modern payment integration",
     longDescription:
       "A comprehensive e-commerce platform built with Next.js and Stripe. Features include user authentication, product management, shopping cart, order processing, and admin dashboard. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
-    image: "PvkImg",
-    technologies: ["React.js", "TypeScript", "Node Js", "Monogo DB", "RestAPI"],
+    image: AuroAdmin,
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Node Js",
+      "Monogo DB",
+      "RestAPI",
+    ],
 
-    githubUrl: "https://github.com/example/ecommerce",
-    liveUrl: "http://poorvika.com/",
+    githubUrl: "https://github.com/silambarasanstr/AURA-SHOP-APP-BACKUP",
+    liveUrl: "https://aura-shop-app-backup-8678.vercel.app/",
     featured: true,
-    category: "fullstack",
+    category: "admin",
   },
   {
-    id: "Food-Delivery-platform",
-    title: "Food Delivery E-Commerce",
+    id: "e-commerce-platform",
+    title: "FlipKart Clone E-Commerce",
     description:
       "Full-stack e-commerce solution with modern payment integration",
     longDescription:
       "A comprehensive e-commerce platform built with Next.js and Stripe. Features include user authentication, product management, shopping cart, order processing, and admin dashboard. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
-    image: "PvkImg",
-    technologies: ["Next.js", "TypeScript", "Node Js", "Monogo DB", "RestAPI"],
+    image: Auro,
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Node Js",
+      "Monogo DB",
+      "RestAPI",
+    ],
 
-    githubUrl: "https://github.com/example/ecommerce",
+    githubUrl: "https://github.com/silambarasanstr/E-CommerceManagementSystem",
     liveUrl: "http://poorvika.com/",
     featured: true,
     category: "fullstack",
   },
 
   {
-    id: "task-management-app",
-    title: "Task Management App",
+    id: "portfolio-app",
+    title: "Portfolio",
     description: "Collaborative task management with real-time updates",
     longDescription:
       "A modern task management application featuring real-time collaboration, drag-and-drop functionality, team workspaces, and advanced filtering. Built with React and Socket.io for real-time features, with a focus on user experience and performance.",
-    image: "Img",
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-    githubUrl: "https://github.com/example/taskapp",
-    liveUrl: "https://taskapp-demo.netlify.app",
+    image: Portfolio,
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    githubUrl: "https://github.com/silambarasanstr/Next-Portfolio",
+    liveUrl: "https://next-portfolio-virid-eta.vercel.app/",
     featured: true,
-    category: "web",
-  },
-  {
-    id: "weather-dashboard",
-    title: "Weather Dashboard",
-    description: "Beautiful weather app with location-based forecasts",
-    longDescription:
-      "An elegant weather dashboard that provides detailed weather information, 7-day forecasts, and interactive maps. Features location-based weather detection, beautiful animations, and responsive design optimized for all devices.",
-    image: "Img",
-    technologies: ["Vue.js", "TypeScript", "OpenWeather API", "Chart.js"],
-    githubUrl: "https://github.com/example/weather",
-    liveUrl: "https://weather-dashboard-demo.vercel.app",
-    featured: false,
-    category: "web",
-  },
-  {
-    id: "mobile-fitness-app",
-    title: "Mobile Fitness Tracker",
-    description: "Cross-platform fitness tracking with workout plans",
-    longDescription:
-      "A comprehensive fitness tracking application built with React Native. Features workout logging, progress tracking, social features, and personalized workout recommendations. Includes offline support and seamless synchronization across devices.",
-    image: "Img",
-    technologies: ["React Native", "Redux", "Firebase", "Expo"],
-    githubUrl: "https://github.com/example/fitness",
-    featured: false,
-    category: "mobile",
+    category: "static",
   },
 ];
 
