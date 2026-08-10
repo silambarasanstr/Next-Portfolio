@@ -57,47 +57,46 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className="rounded-lg shadow bg-white"
+              className=" shadow bg-white border border-gray-300 rounded"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className=" group overflow-hidden  bg-white border-0">
-                <div className="relative overflow-hidden">
+              <div className=" group overflow-hidden bg-white    rounded ">
+                <div className="relative overflow-hidden ">
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={400}
                     height={250}
-                    className="w-full h-48 object-cover "
+                    className="w-full h-48 object-cover"
                   />
 
                   {/* Project Links Overlay */}
-                  <div className="  absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex space-x-3">
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-300 group-hover:bg-black/40 group-hover:opacity-100">
+                    <div className="flex items-center gap-3">
+                      {/* Live Demo */}
                       {project.liveUrl && (
-                        <div className="flex items-center border border-gray-300  h-9 rounded-md px-3 bg-white text-gray-900 hover:bg-gray-100">
-                          <a
-                            href={project.liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center"
-                          >
-                            <Eye className="h-4 w-4 mr-2" />
-                            Live Demo
-                          </a>
-                        </div>
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex h-9 items-center gap-2 rounded-md bg-violet-600 px-3 text-sm font-medium text-white shadow-lg transition hover:bg-violet-700"
+                        >
+                          <Eye className="h-4 w-4" />
+                          <span>Live Demo</span>
+                        </a>
                       )}
+
+                      {/* GitHub */}
                       {project.githubUrl && (
-                        <div className="flex items-center border border-gray-300  h-9 rounded-md px-3 bg-white text-gray-900 hover:bg-gray-100">
-                          <a
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center"
-                          >
-                            <Github className="h-4 w-4 mr-2" />
-                            Code
-                          </a>
-                        </div>
+                        <a
+                          href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex h-9 items-center gap-2 rounded-md bg-gray-800 px-3 text-sm font-medium text-white shadow-lg transition hover:bg-gray-900"
+                        >
+                          <Github className="h-4 w-4" />
+                          <span>Code</span>
+                        </a>
                       )}
                     </div>
                   </div>

@@ -2,8 +2,31 @@ import { Project } from "@/types/portfolio";
 import Auro from "@/assert/auro.png";
 import AuroAdmin from "@/assert/auro-admin.png";
 import Portfolio from "@/assert/portfolio.png";
+import FlipKart from "@/assert/flip.png";
+import PayRoll from "@/assert/payroll.png";
+import ChitFund from "@/assert/chit.png";
 
 export const projects: Project[] = [
+  {
+    id: "chit-fund-management-system",
+    title: "Chit Fund Management System",
+    description:
+      "A comprehensive solution for managing chit fund operations with real-time tracking and reporting.",
+    longDescription: "",
+    image: ChitFund,
+    technologies: [
+      "React.js",
+      "Tailwind CSS",
+      "Node Js",
+      "Express.js",
+      "Monogo DB",
+      "RestAPI",
+    ],
+    githubUrl: "https://github.com/silambarasanstr/Chit-Fund-Management-System",
+    liveUrl: "https://chit-fund-management-system.vercel.app",
+
+    category: "admin",
+  },
   {
     id: "ecommerce-platform",
     title: "AURA-SHOP-APP [FrontEnd]",
@@ -16,6 +39,7 @@ export const projects: Project[] = [
       "React.js",
       "Tailwind CSS",
       "Node Js",
+      "Express.js",
       "Monogo DB",
       "RestAPI",
     ],
@@ -36,6 +60,7 @@ export const projects: Project[] = [
       "React.js",
       "Tailwind CSS",
       "Node Js",
+      "Express.js",
       "Monogo DB",
       "RestAPI",
     ],
@@ -52,19 +77,43 @@ export const projects: Project[] = [
       "Full-stack e-commerce solution with modern payment integration",
     longDescription:
       "A comprehensive e-commerce platform built with Next.js and Stripe. Features include user authentication, product management, shopping cart, order processing, and admin dashboard. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
-    image: Auro,
+    image: FlipKart,
     technologies: [
       "React.js",
+      "TypeScript",
       "Tailwind CSS",
       "Node Js",
+      "Express.js",
       "Monogo DB",
       "RestAPI",
     ],
 
     githubUrl: "https://github.com/silambarasanstr/E-CommerceManagementSystem",
-    liveUrl: "http://poorvika.com/",
+    liveUrl: "https://e-commerce-management-system-gamma.vercel.app/",
     featured: true,
     category: "fullstack",
+  },
+
+  {
+    id: "payroll-platform",
+    title: "Payroll Management System",
+    description: "Full-stack payroll solution with automated processing",
+    longDescription:
+      "A comprehensive payroll management platform built with Next.js and Stripe. Features include employee management, salary calculations, tax processing, and reporting. Implemented with TypeScript for type safety and deployed on Vercel with automatic deployments.",
+    image: PayRoll,
+    technologies: [
+      "Next.js",
+      "Tailwind CSS",
+      "Node Js",
+      "Express.js",
+      "Monogo DB",
+      "RestAPI",
+    ],
+
+    githubUrl: "https://github.com/silambarasanstr/payroll-management-system",
+    liveUrl: "https://payroll-management-system-jet.vercel.app/employees",
+    featured: true,
+    category: "admin",
   },
 
   {
@@ -83,17 +132,22 @@ export const projects: Project[] = [
 ];
 
 export const skills = [
-  { name: "React", level: 95, category: "frontend" as const },
-  { name: "TypeScript", level: 90, category: "frontend" as const },
-  { name: "Next.js", level: 88, category: "frontend" as const },
-  { name: "Tailwind CSS", level: 92, category: "frontend" as const },
+  { name: "HTML", category: "frontend" },
+  { name: "Css", category: "frontend" },
+  { name: "Bootstrap", category: "frontend" },
+  { name: "React", category: "frontend" },
+  { name: "TypeScript", category: "frontend" },
+  { name: "Next.js", category: "frontend" },
+  { name: "Tailwind CSS", category: "frontend" },
 
-  { name: "Node.js", level: 85, category: "backend" as const },
+  { name: "Node.js", category: "backend" },
+  { name: "Express.js", category: "backend" },
+  { name: "MongoDB", category: "backend" },
 
-  { name: "MongoDB", level: 75, category: "backend" as const },
-  { name: "Git", level: 90, category: "tools" as const },
-  { name: "Docker", level: 70, category: "tools" as const },
-  { name: "Figma", level: 85, category: "design" as const },
+  { name: "Git", category: "tools" },
+  { name: "Docker", category: "tools" },
+
+  { name: "Figma", category: "design" },
 ];
 
 export const experiences = [

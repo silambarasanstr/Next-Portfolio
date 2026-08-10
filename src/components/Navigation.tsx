@@ -118,7 +118,7 @@ const Navigation = () => {
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/silambarasanstr?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900"
