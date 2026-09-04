@@ -1,5 +1,5 @@
 "use client";
-import dynamic from "next/dynamic";
+
 import React from "react";
 
 const Education = () => {
@@ -38,44 +38,57 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-20 bg-gradient-to-br from-purple-50 via-white to-blue-50"
+      className="py-10 bg-linear-to-br from-purple-50 via-white to-blue-50 border-b border-gray-200"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
             My Education
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+
+          <p className="text-sm sm:text-base font-light leading-relaxed text-gray-600 max-w-2xl mx-auto">
             My academic journey that built the foundation for my development
             career.
           </p>
         </div>
 
-        {/* Modern Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Education Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="group relative bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              className="group relative bg-white border border-gray-200 rounded-xl p-4
+              shadow-sm hover:shadow-md transition-all duration-300
+              hover:-translate-y-1"
             >
-              {/* Gradient Top Border */}
-              <div className="absolute inset-x-0 top-0 h-1 bg-blue-500 rounded-t-2xl"></div>
+              {/* Top Border */}
+              <div className="absolute inset-x-0 top-0 h-1 bg-blue-500 rounded-t-xl" />
 
-              {/* Year Badge */}
-              <div className="inline-block px-3 py-1 text-xs font-semibold text-white bg-linear-to-r from-indigo-500 to-purple-500 rounded-full mb-3">
+              {/* Year */}
+              <div
+                className="inline-block px-2.5 py-1 text-[11px] font-semibold
+                text-white bg-linear-to-r from-indigo-500 to-purple-500
+                rounded-full mb-2.5"
+              >
                 {edu.year}
               </div>
 
-              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-purple-600 transition-colors">
+              {/* Degree */}
+              <h3
+                className="text-base font-semibold text-gray-900 leading-snug
+                group-hover:text-purple-600 transition-colors"
+              >
                 {edu.degree}
               </h3>
 
-              <p className="text-blue-600 font-medium mt-1 text-sm">
+              {/* Institution */}
+              <p className="text-blue-600 font-medium mt-1 text-xs sm:text-sm leading-relaxed">
                 {edu.institution}
               </p>
 
-              <p className="text-gray-600 mt-3 text-sm leading-relaxed">
+              {/* Description */}
+              <p className="text-gray-600 mt-2 text-xs sm:text-sm leading-relaxed">
                 {edu.description}
               </p>
             </div>
@@ -86,4 +99,4 @@ const Education = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(Education), { ssr: false });
+export default Education;

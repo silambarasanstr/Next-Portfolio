@@ -1,13 +1,14 @@
 "use client";
+
 import { Download, Sparkles } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
-  
+
   const roles = [
     "Front-End Developer",
-    "React & Next.js ",
+    "React & Next.js",
     "Problem Solver",
     "Always Exploring Tech",
   ];
@@ -22,6 +23,7 @@ const Hero = () => {
 
   const scrollToProjects = () => {
     const element = document.getElementById("projects");
+
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -30,49 +32,60 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50"
+      className="min-h-[85vh] flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 py-12 sm:py-16 border-b border-gray-300"
     >
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-40 left-40 w-80 h-80 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-4000"></div>
+      {/* Background Effects */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-32 -right-32 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply blur-xl opacity-50 animate-pulse" />
+
+        <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply blur-xl opacity-50 animate-pulse" />
+
+        <div className="absolute top-32 left-32 w-64 h-64 bg-pink-300 rounded-full mix-blend-multiply blur-xl opacity-50 animate-pulse" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div className="space-y-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div className="space-y-5">
+
           {/* Main Heading */}
-          <div className="space-y-4">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 tracking-tight">
-              Hi, I am 
-              <span className="ml-2 text-4xl sm:text-6xl lg:text-7xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <div className="space-y-2">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
+              Hi, I am{" "}
+              <span className="text-3xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Silambarasan
               </span>
             </h1>
-            <div className="h-16 flex items-center justify-center">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-600 font-medium transition-all duration-500">
-                <Sparkles className="inline h-6 w-6 mr-2 text-orange-500" />
+
+            {/* Role */}
+            <div className="h-10 flex items-center justify-center">
+              <h2 className="text-lg sm:text-xl lg:text-2xl text-gray-600 font-medium">
+                <Sparkles className="inline h-5 w-5 mr-1.5 text-orange-500" />
                 {roles[currentRole]}
               </h2>
             </div>
           </div>
 
           {/* Description */}
-          <p className="max-w-3xl mx-auto text-lg sm:text-xl text-gray-600">
+          <p className="max-w-2xl mx-auto text-sm sm:text-base lg:text-lg leading-relaxed text-gray-600">
             I specialize in building modern, responsive, and user-friendly
             applications. With a mix of creativity and problem-solving, I turn
             concepts into engaging digital experiences.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <a
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-3">
+            <button
               onClick={scrollToProjects}
-              className="rounded cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 text-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="rounded-md cursor-pointer bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2.5 text-sm sm:text-base font-medium transition-all duration-300 shadow-md hover:shadow-lg"
             >
               View My Work
-            </a>
-            <a className="border-2 flex items-center border-gray-300 text-gray-700 hover:border-green-600 hover:text-green-600 hover:bg-green-50 px-8 py-3 text-lg font-medium transition-all duration-300">
-              <Download className="h-5 w-5 mr-2" />
+            </button>
+
+            <a
+              href="/resume.pdf"
+              download
+              className="border flex items-center rounded-md border-gray-300 text-gray-700 hover:border-green-600 hover:text-green-600 hover:bg-green-50 px-6 py-2.5 text-sm sm:text-base font-medium transition-all duration-300"
+            >
+              <Download className="h-4 w-4 mr-1.5" />
               Download Resume
             </a>
           </div>

@@ -11,22 +11,26 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className=" py-10 bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
             About Me
           </h2>
-          <p className="text-[18px] font-light leading-relaxed tracking-wide text-gray-500 max-w-2xl mx-auto">
-            I am a passionate developer with 6+ years of experience in building
+
+          <p className="text-sm sm:text-base font-light leading-relaxed text-gray-500 max-w-2xl mx-auto">
+            I am a passionate developer with 7 years of experience in building
             modern, scalable, and user-friendly applications.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        {/* Content */}
+        <div className="grid lg:grid-cols-2 gap-7 lg:gap-10 items-start">
+
           {/* About Text */}
-          <div className="text-justify text-gray-600 space-y-3">
+          <div className="text-justify text-sm sm:text-base text-gray-600 space-y-2.5 leading-relaxed">
             <p>
               Hi, I am Silambarasan, a passionate Web Developer and Designer
               with experience in building responsive and user-friendly websites.
@@ -54,25 +58,25 @@ const About = () => {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             {Object.entries(skillCategories).map(
               ([category, categorySkills]) => (
                 <div
                   key={category}
-                  className="p-5 bg-white/70 backdrop-blur-lg border border-gray-200 rounded-2xl shadow-sm hover:shadow-lg transition duration-300"
+                  className="p-4 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition duration-300"
                 >
-                  <h3 className="text-lg font-bold text-gray-800 mb-4 capitalize">
+                  <h3 className="text-base font-semibold text-gray-800 mb-2.5 capitalize">
                     {category} Skills
                   </h3>
 
                   {/* Skill Tags */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5">
                     {categorySkills.map((ele) => (
                       <span
                         key={ele.name}
-                        className="px-3 py-1.5 text-xs font-medium rounded-full 
-                      bg-linear-to-r from-indigo-500 to-purple-500 
-                      text-white shadow-sm hover:scale-105 transition-transform duration-200"
+                        className="px-2.5 py-1 text-[11px] font-medium rounded-full
+                        bg-linear-to-r from-indigo-500 to-purple-500
+                        text-white shadow-sm hover:scale-105 transition-transform duration-200"
                       >
                         {ele.name}
                       </span>
@@ -82,6 +86,7 @@ const About = () => {
               ),
             )}
           </div>
+
         </div>
       </div>
     </section>

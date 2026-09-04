@@ -5,6 +5,7 @@ import Portfolio from "@/assert/portfolio.png";
 import FlipKart from "@/assert/flip.png";
 import PayRoll from "@/assert/payroll.png";
 import ChitFund from "@/assert/chit.png";
+import Dine from "@/assert/dine.png";
 
 export const projects: Project[] = [
   {
@@ -128,6 +129,19 @@ export const projects: Project[] = [
     liveUrl: "https://next-portfolio-virid-eta.vercel.app/",
     featured: true,
     category: "static",
+  },
+  {
+    id: "Dineflow-Restaurant-POS",
+    title: "Dineflow Restaurant POS",
+    description: "Point-of-sale system for restaurant management",
+    longDescription:
+      "A comprehensive point-of-sale system designed for restaurants, featuring order management, inventory tracking, and reporting capabilities. Built with React and Node.js for a seamless user experience.",
+    image: Dine,
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    githubUrl: "https://github.com/silambarasanstr/Dineflow-Restaurant-POS",
+    liveUrl: "#",
+    featured: true,
+    category: "admin",
   },
 ];
 
