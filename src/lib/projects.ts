@@ -6,6 +6,10 @@ import FlipKart from "@/assert/flip.png";
 import PayRoll from "@/assert/payroll.png";
 import ChitFund from "@/assert/chit.png";
 import Dine from "@/assert/dine.png";
+import Biryani from "@/assert/biryani.png";
+import Jewelry from "@/assert/jewelry.png";
+import Clinic from "@/assert/clinic.png";
+import Pharma from "@/assert/rindz.png";
 
 export const projects: Project[] = [
   {
@@ -143,6 +147,55 @@ export const projects: Project[] = [
     featured: true,
     category: "admin",
   },
+
+  {
+    id: "Restaurant-app",
+    title: "SS Hyderabad Biryani ",
+    description: "Order delicious chicken & mutton biryani",
+    longDescription:
+      "Enjoy authentic Hyderabadi biryani in Chennai. Order delicious chicken & mutton biryani from SS Hyderabad Biryani with fast delivery.",
+    image: Biryani,
+    technologies: ["HTML", "Bootstrap", "CSS", "Javascript"],
+    liveUrl: "https://www.sshyderabadbiryani.com/",
+    featured: true,
+    category: "static",
+  },
+  {
+    id: "Jaipur Gems",
+    title: "Jaipur Gems",
+    description: "Order beautiful jewelry",
+    longDescription:
+      "Discover exquisite jewelry at Jaipur Gems. Order beautiful pieces from our collection with fast delivery.",
+    image: Jewelry,
+    technologies: ["HTML", "Bootstrap", "CSS", "Javascript"],
+    liveUrl: "https://jaipurgemsnjewel.in/",
+    featured: true,
+    category: "static",
+  },
+  {
+    id: "kgsclinic",
+    title: "KGS Clinic",
+    description: "Healthcare services for your family",
+    longDescription:
+      "Providing quality healthcare services with a focus on patient care and satisfaction.",
+    image: Clinic,
+    technologies: ["HTML", "Bootstrap", "CSS", "Javascript"],
+    liveUrl: "https://kgsclinic.com/",
+    featured: true,
+    category: "static",
+  },
+  {
+    id: "rindz pharma",
+    title: "Rindz Pharma",
+    description: "Pharmaceutical services for your family",
+    longDescription:
+      "Providing quality pharmaceutical services with a focus on patient care and satisfaction.",
+    image: Pharma,
+    technologies: ["HTML", "Bootstrap", "CSS", "Javascript"],
+    liveUrl: "https://rindz.co.in/",
+    featured: true,
+    category: "static",
+  },
 ];
 
 export const skills = [
@@ -175,7 +228,7 @@ export const experiences = [
       "Focused on front-end development with attention to detail.",
       "Collaborated with the design team to create pixel-perfect user interfaces.",
     ],
-    technologies: ["React.js", "TypeScript", "Next.js"],
+    technologies: ["React.js", "Tailwind CSS"],
   },
   {
     id: "2",
@@ -201,7 +254,7 @@ export const experiences = [
   {
     id: "3",
     company: "GYSO ECOM Services (P) Ltd.",
-    position: "Frontend Developer (OpenCart)",
+    position: "Frontend Developer",
     duration: "2018 - 2019",
     description: [
       "Enterprise application development.",
@@ -218,11 +271,11 @@ export const experiences = [
     position: "Junior Frontend Developer",
     duration: "2016 - 2018",
     description: [
-      "Developed dynamic web pages using HTML5 and CSS3.",
+      "Developed static and dynamic web pages using HTML5 and CSS3.",
       "Updated existing website layouts to meet modern web standards.",
       "Focused on front-end development and user experience.",
       "Implemented mobile responsive web designs.",
     ],
-    technologies: ["HTML", "Bootstrap", "PHP", "MySQL"],
+    technologies: ["HTML", "CSS", "Bootstrap", "Javascript", "PHP", "MySQL"],
   },
 ];

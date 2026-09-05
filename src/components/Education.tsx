@@ -62,8 +62,7 @@ const Education = () => {
               shadow-sm hover:shadow-md transition-all duration-300
               hover:-translate-y-1"
             >
-              {/* Top Border */}
-              <div className="absolute inset-x-0 top-0 h-1 bg-blue-500 rounded-t-xl" />
+              
 
               {/* Year */}
               <div

@@ -35,15 +35,15 @@ const Projects = () => {
   });
 
   return (
-    <section id="projects" className="py-10 bg-gray-50 border-b border-gray-200">
+    <section id="projects" className="py-10 bg-linear-to-br from-gray-900 via-gray-800 to-black text-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+          <h2 className="text-2xl sm:text-3xl font-bold  mb-2">
             Projects
           </h2>
 
-          <p className="text-sm sm:text-base font-light leading-relaxed text-gray-500 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base font-light leading-relaxed text-gray-400 max-w-2xl mx-auto">
             A collection of projects that showcase my skills and passion for
             development
           </p>
@@ -58,7 +58,7 @@ const Projects = () => {
               className={`px-3 py-1.5 text-sm rounded-md cursor-pointer transition ${
                 filter === category.value
                   ? "bg-linear-to-r from-indigo-500 to-purple-500 text-white shadow"
-                  : "border border-gray-300 text-gray-600 hover:border-blue-600 hover:text-blue-600"
+                  : "border border-gray-300  hover:border-blue-600 hover:text-blue-600"
               }`}
             >
               {category.label} ({category.count})

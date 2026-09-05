@@ -4,7 +4,7 @@ import { Building, Calendar } from "lucide-react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-10 bg-blue-50 border-b border-gray-200">
+    <section id="experience" className="py-10  border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-10">
@@ -32,8 +32,8 @@ const Experience = () => {
               {/* Top */}
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1.5 mb-3">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">
-                    {exp.position}
+                  <h3 className="text-lg  font-semibold text-gray-900">
+                    {exp.position} 
                   </h3>
 
                   <div className="flex flex-wrap items-center text-gray-600 text-xs sm:text-sm mt-1.5 gap-x-4 gap-y-1.5">

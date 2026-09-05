@@ -13,8 +13,8 @@ const Contact = () => {
     },
     {
       label: "Phone",
-      value: "(+91) - 9092387869",
-      href: "tel:+919092387869",
+      value: "(+91) - 8220110117",
+      href: "tel:+918220110117",
       icon: Phone,
     },
     {
