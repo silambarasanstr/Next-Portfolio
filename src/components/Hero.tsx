@@ -45,7 +45,6 @@ const Hero = () => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="space-y-5">
-
           {/* Main Heading */}
           <div className="space-y-2">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
@@ -81,7 +80,7 @@ const Hero = () => {
             </button>
 
             <a
-              href="/resume.pdf"
+              href="/Silambarasan_K_Frontend_Developer_Resume.pdf"
               download
               className="border flex items-center rounded-md border-gray-300 text-gray-700 hover:border-green-600 hover:text-green-600 hover:bg-green-50 px-6 py-2.5 text-sm sm:text-base font-medium transition-all duration-300"
             >

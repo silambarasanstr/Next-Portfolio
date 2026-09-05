@@ -80,7 +80,6 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          
           {/* Logo */}
           <div className="shrink-0">
             <span className="text-2xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -129,7 +128,7 @@ const Navigation = () => {
             {/* ✅ Admin (only if logged in) */}
             {isLoggedIn && (
               <Link
-                href="/admin"
+                href="#admin"
                 className="text-gray-600 border border-gray-200 px-3 py-1 rounded hover:text-gray-900"
               >
                 Admin

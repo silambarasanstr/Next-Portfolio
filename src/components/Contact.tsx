@@ -7,8 +7,8 @@ const Contact = () => {
   const contactInfo = [
     {
       label: "Email",
-      value: "developersimbu2025@gmail.com",
-      href: "mailto:developersimbu2025@gmail.com",
+      value: "silambarasan.k.dev@gmail.com",
+      href: "mailto:silambarasan.k.dev@gmail.com",
       icon: Mail,
     },
     {
@@ -92,7 +92,7 @@ const Contact = () => {
             {/* Resume Button */}
             <div className="mt-5">
               <a
-                href="/resume.pdf"
+                href="/Silambarasan_K_Frontend_Developer_Resume.pdf"
                 download
                 className="w-full flex items-center justify-center gap-2
                 bg-linear-to-r from-blue-500 to-purple-500
